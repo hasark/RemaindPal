@@ -8,8 +8,8 @@
 
 ## developer :
 
-- Raha Rezaee
 - Fatemeh Satoori
+- Raha Rezaei
 
 ## Group designers:
 - Hamid Rokni
