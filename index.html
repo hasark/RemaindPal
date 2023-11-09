@@ -1,45 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.492/build/spline-viewer.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="main">
-<form action="">
-    <h1>Sign In</h1>
-    <input type="email" placeholder="Enter your email address">
-    <input type="password" placeholder="password">
-    <button onclick="">Log In</button>
-    <div class="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <ul>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="37"
+              height="38"
+              viewBox="0 0 37 38"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_342_17501)">
+                <path
+                  d="M0 15.7198C0 8.13249 5.56925 1.80097 12.9765 0.327392C14.7751 -0.0304168 16.2792 1.44306 16.2792 3.21852V21.7135C16.2792 29.3008 10.71 35.6323 3.30269 37.1059C1.50408 37.4637 0 35.9902 0 34.2148V15.7198Z"
+                  fill="#4318FF"
+                />
+                <path
+                  d="M18.6406 8.53997C18.6406 3.82347 22.6011 0 27.4866 0C32.3721 0 36.3326 3.82346 36.3326 8.53997V9.03298C36.3326 13.7495 32.3721 17.5729 27.4866 17.5729C22.6011 17.5729 18.6406 13.7495 18.6406 9.03298V8.53997Z"
+                  fill="#4CBFFF"
+                />
+                <path
+                  d="M17.8359 28.4298C17.8359 24.6753 20.3456 21.4867 23.8338 20.3422C25.3498 19.8448 26.6819 21.1437 26.6819 22.6916C26.6819 24.0867 26.6819 25.8843 26.6819 27.8045C26.6819 28.5222 26.9668 29.2132 27.4777 29.7339L31.0649 33.3898C31.8911 34.2318 32.0756 35.514 31.1119 36.2062C30.2198 36.8469 28.8091 37.4629 26.6819 37.4629C21.7964 37.4629 17.8359 33.6394 17.8359 28.9229V28.4298Z"
+                  fill="#9328FF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_342_17501">
+                  <rect width="37" height="38" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="138"
+              height="28"
+              viewBox="0 0 138 28"
+              fill="none"
+            >
+              <path
+                d="M134.328 21.5432V0.757812H138.001V21.5432H134.328Z"
+                fill="url(#paint0_linear_342_17505)"
+              />
+              <path
+                d="M127.318 7.30487H130.991V21.5415H127.318V19.8615C126.217 21.2472 124.67 21.9401 122.677 21.9401C120.779 21.9401 119.146 21.2188 117.779 19.7761C116.432 18.3145 115.758 16.5302 115.758 14.4232C115.758 12.3161 116.432 10.5413 117.779 9.09868C119.146 7.63706 120.779 6.90625 122.677 6.90625C124.67 6.90625 126.217 7.5991 127.318 8.98479V7.30487ZM120.541 17.3274C121.282 18.0677 122.221 18.4379 123.36 18.4379C124.499 18.4379 125.439 18.0677 126.179 17.3274C126.938 16.5681 127.318 15.6001 127.318 14.4232C127.318 13.2463 126.938 12.2877 126.179 11.5474C125.439 10.7881 124.499 10.4084 123.36 10.4084C122.221 10.4084 121.282 10.7881 120.541 11.5474C119.801 12.2877 119.431 13.2463 119.431 14.4232C119.431 15.6001 119.801 16.5681 120.541 17.3274Z"
+                fill="url(#paint1_linear_342_17505)"
+              />
+              <path
+                d="M106.965 6.90625C108.883 6.90625 110.515 7.63706 111.863 9.09868C113.229 10.5413 113.913 12.3161 113.913 14.4232C113.913 16.5302 113.229 18.3145 111.863 19.7761C110.515 21.2188 108.883 21.9401 106.965 21.9401C104.972 21.9401 103.435 21.2472 102.353 19.8615V27.2361H98.6797V7.30487H102.353V8.98479C103.435 7.5991 104.972 6.90625 106.965 6.90625ZM103.463 17.3274C104.203 18.0677 105.143 18.4379 106.282 18.4379C107.421 18.4379 108.361 18.0677 109.101 17.3274C109.86 16.5681 110.24 15.6001 110.24 14.4232C110.24 13.2463 109.86 12.2877 109.101 11.5474C108.361 10.7881 107.421 10.4084 106.282 10.4084C105.143 10.4084 104.203 10.7881 103.463 11.5474C102.723 12.2877 102.353 13.2463 102.353 14.4232C102.353 15.6001 102.723 16.5681 103.463 17.3274Z"
+                fill="url(#paint2_linear_342_17505)"
+              />
+              <path
+                d="M91.646 1.60938H95.3191V21.5406H91.646V19.8607C90.5641 21.2464 89.0265 21.9392 87.0334 21.9392C85.1162 21.9392 83.4742 21.2179 82.1075 19.7753C80.7598 18.3136 80.0859 16.5293 80.0859 14.4223C80.0859 12.3153 80.7598 10.5405 82.1075 9.09782C83.4742 7.63619 85.1162 6.90538 87.0334 6.90538C89.0265 6.90538 90.5641 7.59823 91.646 8.98392V1.60938ZM84.8694 17.3266C85.6287 18.0669 86.5778 18.437 87.7167 18.437C88.8557 18.437 89.7953 18.0669 90.5356 17.3266C91.2759 16.5673 91.646 15.5992 91.646 14.4223C91.646 13.2454 91.2759 12.2868 90.5356 11.5465C89.7953 10.7872 88.8557 10.4076 87.7167 10.4076C86.5778 10.4076 85.6287 10.7872 84.8694 11.5465C84.1291 12.2868 83.759 13.2454 83.759 14.4223C83.759 15.5992 84.1291 16.5673 84.8694 17.3266Z"
+                fill="url(#paint3_linear_342_17505)"
+              />
+              <path
+                d="M72.3374 6.90625C73.8939 6.90625 75.1752 7.42826 76.1813 8.47227C77.2063 9.51629 77.7188 10.9589 77.7188 12.8002V21.5415H74.0458V13.2558C74.0458 12.3067 73.7895 11.5853 73.277 11.0918C72.7645 10.5793 72.0812 10.323 71.227 10.323C70.2779 10.323 69.5186 10.6173 68.9491 11.2057C68.3796 11.7941 68.0949 12.6768 68.0949 13.8537V21.5415H64.4219V7.30487H68.0949V8.89937C68.9871 7.57062 70.4012 6.90625 72.3374 6.90625Z"
+                fill="url(#paint4_linear_342_17505)"
+              />
+              <path
+                d="M59.2181 5.59755C58.6107 5.59755 58.0792 5.37925 57.6236 4.94266C57.187 4.48709 56.9688 3.95559 56.9688 3.34816C56.9688 2.74074 57.187 2.20924 57.6236 1.75367C58.0792 1.2981 58.6107 1.07031 59.2181 1.07031C59.8445 1.07031 60.376 1.2981 60.8126 1.75367C61.2682 2.20924 61.496 2.74074 61.496 3.34816C61.496 3.95559 61.2682 4.48709 60.8126 4.94266C60.376 5.37925 59.8445 5.59755 59.2181 5.59755ZM57.3958 21.5425V7.30593H61.0689V21.5425H57.3958Z"
+                fill="url(#paint5_linear_342_17505)"
+              />
+              <path
+                d="M48.8941 6.90625C50.5266 6.90625 51.8268 7.43775 52.7949 8.50074C53.782 9.56374 54.2755 10.9874 54.2755 12.7717V21.5415H50.6025V13.028C50.6025 12.1738 50.3937 11.5094 49.9761 11.0349C49.5585 10.5603 48.97 10.323 48.2107 10.323C47.3755 10.323 46.7206 10.5983 46.2461 11.1487C45.7905 11.6992 45.5627 12.4965 45.5627 13.5405V21.5415H41.8897V13.028C41.8897 12.1738 41.6809 11.5094 41.2633 11.0349C40.8457 10.5603 40.2572 10.323 39.4979 10.323C38.6817 10.323 38.0268 10.5983 37.5333 11.1487C37.0588 11.6992 36.8215 12.4965 36.8215 13.5405V21.5415H33.1484V7.30487H36.8215V8.81395C37.6757 7.54215 38.9949 6.90625 40.7792 6.90625C42.5256 6.90625 43.8164 7.5896 44.6516 8.95632C45.6007 7.5896 47.0149 6.90625 48.8941 6.90625Z"
+                fill="url(#paint6_linear_342_17505)"
+              />
+              <path
+                d="M19.6954 15.9322C20.189 17.7166 21.5272 18.6087 23.7102 18.6087C25.1148 18.6087 26.1778 18.1342 26.8991 17.1851L29.8604 18.8934C28.4557 20.9245 26.3866 21.9401 23.6532 21.9401C21.2994 21.9401 19.4107 21.2282 17.9871 19.8046C16.5634 18.3809 15.8516 16.5871 15.8516 14.4232C15.8516 12.2782 16.5539 10.4939 17.9586 9.07021C19.3633 7.62757 21.1666 6.90625 23.3685 6.90625C25.4565 6.90625 27.1744 7.62757 28.5221 9.07021C29.8888 10.5128 30.5722 12.2972 30.5722 14.4232C30.5722 14.8977 30.5247 15.4007 30.4298 15.9322H19.6954ZM19.6385 13.0849H26.8991C26.6903 12.1168 26.2538 11.3955 25.5894 10.921C24.944 10.4464 24.2037 10.2091 23.3685 10.2091C22.3814 10.2091 21.5652 10.4654 20.9198 10.9779C20.2744 11.4714 19.8473 12.1738 19.6385 13.0849Z"
+                fill="url(#paint7_linear_342_17505)"
+              />
+              <path
+                d="M10.9337 21.5406L6.91898 14.6216H3.9293V21.5406H0V1.60938H7.97249C9.81375 1.60938 11.3798 2.25477 12.6706 3.54555C13.9613 4.83633 14.6067 6.39287 14.6067 8.21515C14.6067 9.44898 14.2556 10.5974 13.5532 11.6604C12.8509 12.7044 11.9208 13.4922 10.7629 14.0237L15.1762 21.5406H10.9337ZM3.9293 5.28241V11.1764H7.97249C8.71279 11.1764 9.34869 10.8916 9.88019 10.3222C10.4117 9.73372 10.6774 9.03138 10.6774 8.21515C10.6774 7.39892 10.4117 6.70607 9.88019 6.13661C9.34869 5.56714 8.71279 5.28241 7.97249 5.28241H3.9293Z"
+                fill="url(#paint8_linear_342_17505)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_342_17505"
+                  x1="-3.8834"
+                  y1="-3.69436"
+                  x2="149.807"
+                  y2="21.5432"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_342_17505"
+                  x1="-3.88987"
+                  y1="-3.69611"
+                  x2="149.8"
+                  y2="21.5415"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_342_17505"
+                  x1="-3.88476"
+                  y1="-3.69613"
+                  x2="149.806"
+                  y2="21.5414"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_342_17505"
+                  x1="-3.88622"
+                  y1="-3.69699"
+                  x2="149.804"
+                  y2="21.5406"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint4_linear_342_17505"
+                  x1="-3.88583"
+                  y1="-3.69612"
+                  x2="149.804"
+                  y2="21.5415"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint5_linear_342_17505"
+                  x1="-3.87699"
+                  y1="-3.69505"
+                  x2="149.813"
+                  y2="21.5425"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint6_linear_342_17505"
+                  x1="-3.87773"
+                  y1="-3.69612"
+                  x2="149.813"
+                  y2="21.5415"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint7_linear_342_17505"
+                  x1="-3.88984"
+                  y1="-3.69612"
+                  x2="149.8"
+                  y2="21.5415"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+                <linearGradient
+                  id="paint8_linear_342_17505"
+                  x1="-3.88564"
+                  y1="-3.69698"
+                  x2="149.805"
+                  y2="21.5406"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4318FF" />
+                  <stop offset="1" stop-color="#9328FF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div>
+            <li>About Us</li>
+            <li>Members</li>
+          </div>
+        </ul>
+        <ul>
+          <li><a href="#">Log In</a></li>
+          <li>Let’s get organized</li>
+        </ul>
+      </section>
+      <section>
+        <div>
+          <div>
+            <h1>Become focused, organized and stay on track.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div>
+            <button><a href="#">Let’s get organized</a></button>
+            <button><a href="#">Log In</a></button>
+          </div>
+        </div>
         <div></div>
-        <p>or</p>
-        <div></div>
-    </div>
-    <a id="one" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=398874333579-u9rrotjv4vu07ut6l3844d6mspcadqds.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauth.w3spaces.com%2Foauth2%2Fidpresponse&scope=profile%20email%20openid&response_type=code&state=H4sIAAAAAAAAAE1QW3OiMBT-L3k2NnITfFNKrUstUqlWd3acEAIJQkK5iLCz_33jw87s0znffJfzzfkNMFiAroEUNy2cXbq1s19_zY8JmIBYMWsps4IqQBRIZln9XRaIlmx-k-01Rllb1wIpOlE0a9uqWTw9VbVMeUGnvd4QJmXRTIkslYYqDZHJIy39PzoDi59AVlTwx1XcP_SZ4K2cNlxNMe0aWk9xUnIBfk0AU163WLEowM-9-XL4On7bAZZDxIT-Prz6XHJD5XAlyyEMlid9S487bROeNIt7JduH7ueSWYd4c-_iC4pFm_dbTzly5dhrpqXWq1ovHweW9M4mqrp6sM428jqa3SM-uvOXq2-YpMzdGB4JOg_LoUFW5W9NMc_eSrEaOhxC95z411zYn5CHGy-8jRft1vlnf7VjboRfy4Cv7gN2LPY27kTo3UeSElSO2zcUXAMzl2urNc6nH0cUOwW3ugbbkZW8j4Hbz5_TxrY9u-MGv4jU6VXjQjXGXcseX68wof-eXoLFzHJsZ2bohjMBFVikuGjoBNTKYGJH0xDSoJZSBxoJwTB2NAtiMqPIILqe2Ab48xcDGyNmJAIAAA.H4sIAAAAAAAAAOP4fTlfOOrA7LY7t2ofsjfxygjUnfWqiqhxZp6n6bJU_y0ALIR0YiAAAAA.4&access_type=offline&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow">
-        <img src="image/google.svg" alt="">
-        Continue With Google</a>
+      </section>
+    </header>
+    <main>
+      <section id="About-Us-SEC">
+        <h1><img src="img/hash-iso-color.png" alt="to" />About Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <section class="Members-About-SEC">
+        <div id="title-Members-About-SEC">
+          <h1>Members</h1>
+        </div>
 
-    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=192718330121667&kid_directed_site=0&app_id=192718330121667&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D192718330121667%26redirect_uri%3Dhttps%253A%252F%252Fauth.w3spaces.com%252Foauth2%252Fidpresponse%26scope%3Dpublic_profile%252Cemail%26response_type%3Dcode%26state%3DH4sIAAAAAAAAAFWRW5OiMBCF_0ueheGewTdHB1DXlR0EHbe2LC4JIIREEoRxa__7xod92KecrnO-7q7Ob5CCORi4glIuFP0y-G7kn-CxADOQScdLc5RR2sgyl2Whl_2NtBoiFbxT0WRaKfq-06RdSLsSgvH5ywvrKa5bpI4mzytKW67mlMgMkpmcFkhK_H_zEsx_AspQVz8np-OTKLtaUJXX8u3UgaNeTQtSd-DXDFSSTnik4Udt1FHwluPVfrWou3Gx3ty8wjwUBMs-tYxN4RWZS3K9vpN75BH8Du0h8A9pb4p4f1rDZe5dz7CvbI1L4iqJyLAdKRspY-s0ChSwNUsEShLhecoBb-m4jc5sh6bV59LVo5Ith8nx2SWJ-Oq7PoRVHHe7xZfjb2CQaF2eRuRb4JDcNhIYervxfgjGzVdR0VXgRWl42a2ZmGDhNA-49j8w_zxrgTcdnSOjDX7FTqvFyzGmFCZbHPbuomh6nezpI4f0I3obfgzldF_IjVu5cTqI6nl3Jm_77-wEzHXHfXV1y3asGWBgjtOWoxm4SeCu2-rz_3qps9QxXJTZSqYVULEszVAkBhXT0k1pGK6OXfDnL4Dm6AA0AgAA.H4sIAAAAAAAAAAEgAN__020R1QM2g1ca-aKAj6T0_22eI5MfY4jmmQCa5gHe8pz6DCWsIAAAAA.4%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D80a12348-e0f1-46f4-be72-820a5cb8b115%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fauth.w3spaces.com%2Foauth2%2Fidpresponse%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DH4sIAAAAAAAAAFWRW5OiMBCF_0ueheGewTdHB1DXlR0EHbe2LC4JIIREEoRxa__7xod92KecrnO-7q7Ob5CCORi4glIuFP0y-G7kn-CxADOQScdLc5RR2sgyl2Whl_2NtBoiFbxT0WRaKfq-06RdSLsSgvH5ywvrKa5bpI4mzytKW67mlMgMkpmcFkhK_H_zEsx_AspQVz8np-OTKLtaUJXX8u3UgaNeTQtSd-DXDFSSTnik4Udt1FHwluPVfrWou3Gx3ty8wjwUBMs-tYxN4RWZS3K9vpN75BH8Du0h8A9pb4p4f1rDZe5dz7CvbI1L4iqJyLAdKRspY-s0ChSwNUsEShLhecoBb-m4jc5sh6bV59LVo5Ith8nx2SWJ-Oq7PoRVHHe7xZfjb2CQaF2eRuRb4JDcNhIYervxfgjGzVdR0VXgRWl42a2ZmGDhNA-49j8w_zxrgTcdnSOjDX7FTqvFyzGmFCZbHPbuomh6nezpI4f0I3obfgzldF_IjVu5cTqI6nl3Jm_77-wEzHXHfXV1y3asGWBgjtOWoxm4SeCu2-rz_3qps9QxXJTZSqYVULEszVAkBhXT0k1pGK6OXfDnL4Dm6AA0AgAA.H4sIAAAAAAAAAAEgAN__020R1QM2g1ca-aKAj6T0_22eI5MfY4jmmQCa5gHe8pz6DCWsIAAAAA.4%23_%3D_&display=page&locale=en_US&pl_dbl=0">
-        <img src="image/facebook.svg" alt="">
-        Continue With Facebook</a>
+        
+        <div class="about-creator-div">
+          <img src="img/SEC mebers about/hadi.png" alt="hadi" />
+          <div class="text-about-Members-About-SEC">
+            <div>
+              <h5>Hadi</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div><span>Rolls :</span><span>Designer</span></div>
+          </div>
+        </div>
 
-    <a href="#">
-        <img src="image/twitch.svg" alt="">
-        Continue With twitch</a>
+        <div class="about-creator-div">
+            
+            <div class="text-about-Members-About-SEC">
+              <div>
+                <h5>Hamid</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div><span>Rolls :</span><span>Designer</span></div>
+            </div>
+            <img src="img/SEC mebers about/hamid.png" alt="hamid" />
+          </div>
 
-    <div class="form-link">
-        <span>Don't have an account? <a href="singup.html" class="link signup-link">Signup</a></span>
-    </div>
-</form>
-</div>
+          <div class="about-creator-div">
+            <img src="img/SEC mebers about/fatemeh.png" alt="Fatemeh" />
+            <div class="text-about-Members-About-SEC">
+              <div>
+                <h5>Fatemeh</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div><span>Rolls :</span><span>Devloper</span></div>
+            </div>
+          </div>
 
-   
-<spline-viewer url="https://prod.spline.design/jsaC-75Z7xhCcV9i/scene.splinecode"></spline-viewer>
-</body>
+          <div class="about-creator-div">
+            
+            <div class="text-about-Members-About-SEC">
+              <div>
+                <h5>Raha</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div><span>Rolls :</span><span>Devloper</span></div>
+            </div>
+            <img src="img/SEC mebers about/raha.png" alt="raha" />
+          </div>
+      </section>
+    </main>
+  </body>
 </html>
-
-
