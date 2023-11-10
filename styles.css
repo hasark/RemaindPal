@@ -224,8 +224,8 @@ form {
     margin: 0;
   }
   spline-viewer {
-    height: 500vw;
-    width:200vw !important;
+    height:250vw;
+    width:102vw !important;
     position: absolute;
     top: 0;
     left: 0;
