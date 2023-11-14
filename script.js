@@ -155,7 +155,7 @@ function hideConfirmation() {
 }
 
 function navigateToLink() {
-  window.location.href = "sindex.html";
+  window.location.href = "index.html";
 }
 // finish
 
