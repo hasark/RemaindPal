@@ -225,6 +225,7 @@ header>.menu>.frame>.ul>li>a {
   height: 38px;
   color: #FFF;
   border-radius: 50px;
+  border:none;
 }
 
 .text_button_primery_small {
