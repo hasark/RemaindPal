@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!--side bar -->
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+            <li id="user">
+                <a href="eddit.html">
+                    <img id="profileImage" src="image/abstract-user-flat-4.png" alt="">
+                    <span class="nav-text">
+                        User
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="sindex.html">
+                    <img src="image/calendar.svg" width="40px" alt="">
+                    <span class="nav-text">
+                        Today
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="done.html">
+                    <img src="image/clock.svg" width="40px" alt="">
+                    <span class="nav-text">
+                        Reminders
+                    </span>
+                </a>
+
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="image/save-2.svg" width="40px" alt="">
+                    <span class="nav-text">
+                        Labels
+                    </span>
+                </a>
+            </li>
+            <li id="log">
+                <a onclick="showConfirmation()" href="#">
+                    <img src="image/logoutred.svg" width="40px" alt="">
+                    <span id="signOUT" class="nav-text">
+                        Sign out
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="image/remindpal 1.svg" width="40px" alt="">
+                    <span class="nav-text">
+                        <img id="name" src="image/Remindpal.svg" alt="">
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- menu mobile -->
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="sindex.html">Today
+                    <img src="image/calendar.svg" alt="">
+                </a></li>
+            <li><a class="menu__item" href="Time.html">Remainder
+                    <img src="image/clock.svg" alt="">
+                </a></li>
+            <li><a class="menu__item" href="#">labels
+                    <img src="image/save-2.svg" alt="">
+                </a></li>
+            <li><a  onclick="showConfirmation()" id="logout" class="menu__item" href="#">Log out
+                    <img id="signOUT" src="image/logout.svg" alt="">
+                </a></li>
+        </ul>
+    </div>
+    <!-- finish -->
+
+    <!-- start user conternt -->
+    <div class="personal-box">
+        <div class="contert-box">
+            <!-- upload prof -->
+            <div class="container">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                    <div class="avatar-preview">
+                        <div id="imagePreview" style="background-image: url('http://i.pravatar.cc/500?img=7');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- partial -->
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+            <script src="./script.js"></script>
+
+            <!-- finish upload -->
+            <form id="form">
+                <input type="text" value="USER"">
+                <input type=" password" value="123456789">
+                <input type="password" value="123456789">
+                <input id="maile" type="email" value="user@gmail.com">
+                <button onclick="updateProfile()">Upload profile</button>
+            </form>
+            <!-- account user -->
+            <div class="content-account">
+                <h1>content box</h1>
+                <div class="row">
+
+                    <div>
+                        <img src="image/Group 69.png" alt="">
+                        <span>Trello</span>
+                    </div>
+                    <div>
+                        <img src="image/behans-img.png" alt="">
+                        <span>BEHANCE</span>
+                    </div>
+                    <div>
+                        <img src="image/dribble-img.png" alt="">
+                        <span>DRIBBLE</span>
+                    </div>
+                </div>
+            </div>
+            <!-- finish -->
+        </div>
+    </div>
+    <!-- finish -->
+    
+    <!-- menutoggle -->
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+        </label>
+
+        <a href="done.html" class="menu-item blue"> <img src="image/clock.svg" alt=""> </a>
+        <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+        <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+        <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+        <a href="Time.html" class="menu-item orange"> <img src="image/calendar.svg" alt=""> </a>
+        <a href="#" class="menu-item lightblue"> <img src="image/save-2.svg" alt=""> </a>
+    </nav>
+    <!-- finish -->
+
+    <script src="script.js"></script>
+    <script src="plugin/jquery.min.js"></script>
+    <script src="script/userpro.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="plugin/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+
+</head>
+
+<body>
+    <html>
+
+    <head>
+
+        <!--side bar -->
+        <div class="area"></div>
+        <nav class="main-menu">
+            <ul>
+                <li id="user">
+                    <a href="eddit.html">
+                        <img id="profileImage" src="image/abstract-user-flat-4.png" alt="">
+                        <span class="nav-text">
+                            User
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="sindex.html">
+                        <img src="image/calendar.svg" width="40px" alt="">
+                        <span class="nav-text">
+                            Today
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <img src="image/clock.svg" width="40px" alt="">
+                        <span class="nav-text">
+                            Reminders
+                        </span>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="image/save-2.svg" width="40px" alt="">
+                        <span class="nav-text">
+                            Labels
+                        </span>
+                    </a>
+                </li>
+                <li id="log">
+                    <a href="#">
+                        <img onclick="showConfirmation()" src="image/logoutred.svg" width="40px" alt="">
+                        <span id="signOUT" class="nav-text">
+                            Sign out
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/remindpal 1.svg" width="40px" alt="">
+                        <span class="nav-text">
+                            <img id="name" src="image/Remindpal.svg" alt="">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- menu mobile -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="sindex.html">Today
+                        <img src="image/calendar.svg" alt="">
+                    </a></li>
+                <li><a class="menu__item" href="Time.html">Remainder
+                        <img src="image/clock.svg" alt="">
+                    </a></li>
+                <li><a class="menu__item" href="#">labels
+                        <img src="image/save-2.svg" alt="">
+                    </a></li>
+                    <li><a  onclick="showConfirmation()" id="logout" class="menu__item" href="#">Log out
+                        <img id="signOUT" src="image/logout.svg" alt="">
+                    </a></li>
+            </ul>
+        </div>
+        <!-- finish -->
+        <!-- hoers -->
+        <div id="currentDate"></div>
+        <div id="currentTime"></div>
+        <!-- meesage dialog -->
+        <div id="confirmationDialog" class="hidden">
+            <p>Sure you want to sign out?</p>
+            <button id="StayBtn" onclick="navigateToLink()">No, keep staying</button>
+            <button id="canselBtn" onclick="hideConfirmation()">Yes,sign out</button>
+        </div>
+        <!-- finish -->
+        <form id="new-todo-form">
+            <input type="text" id="content" name="content" placeholder="Reminder name">
+            <h2>Time</h2>
+
+            <input type="text" id="fromdate" name="fromdate" placeholder="From Date">
+
+            <input type="text" id="todate" name="todate" placeholder="To Date">
+
+            <!-- finish -->
+
+            <h2>Labels</h2>
+            <a id="a1" class="category" href="#">Gym</a>
+            <a id="a2" class="category" href="#">Education</a>
+            <a id="a3" class="category" href="#">Work</a>
+            <a id="a4" class="category" href="#">Game</a>
+            <a id="a5" class="category" href="#">Challenge</a>
+            <a id="a6" class="category" href="#">Home work</a>
+
+            <input type="hidden" id="selectedLinkId" name="selectedLinkId">
+            <input type="hidden" id="selectedLinkText" name="selectedLinkText">
+
+            <!-- set remainder -->
+            <button id="bton">SET remainder</button>
+        </form>
+
+        <!-- menutoggle -->
+        <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+            <label class="menu-open-button" for="menu-open">
+                <span class="lines line-1"></span>
+                <span class="lines line-2"></span>
+                <span class="lines line-3"></span>
+            </label>
+
+            <a href="done.html" class="menu-item blue"> <img src="image/clock.svg" alt=""> </a>
+            <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+            <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+            <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+            <a href="Time.html" class="menu-item orange"> <img src="image/calendar.svg" alt=""> </a>
+            <a href="#" class="menu-item lightblue"> <img src="image/save-2.svg" alt=""> </a>
+        </nav>
+        <!-- finish -->
+
+
+        <script src="script/time.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                flatpickr("#fromdate", {
+                    enableTime: true,
+                    dateFormat: "Y-m-d H:i",
+                    time_24hr: true
+                });
+
+                flatpickr("#todate", {
+                    enableTime: true,
+                    dateFormat: "Y-m-d H:i",
+                    time_24hr: true
+                });
+
+            });
+        </script>
+</body>
+
+
+
+</html>
