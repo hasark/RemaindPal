@@ -35,7 +35,7 @@ function showLOG() {
  window.open("sindex.html", "_blank");
 }
 
-// 
+
 
 // set user's time in done page
 const newTodoForm = document.querySelector('#new-todo-form');
