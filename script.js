@@ -27,6 +27,10 @@ function openTimePage() {
 function OpenView() {
 window.open("userpro.html", "_top");
 }
+function openSIndex() {
+    window.open("sindex.html", "_blank");
+}
+}
 
 // 
 
