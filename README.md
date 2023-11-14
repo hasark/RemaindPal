@@ -1,10 +1,7 @@
 
 # About RemaindPal project
 ### 2 November
-
-
-[![|OurTeam](https://s6.uupload.ir/files/file_cover_-_1_4fpj.png)](https://bugbuusters.github.io/RemaindPal/)
-
+![image](https://github.com/bugbuusters/RemaindPal/assets/120264494/835462ca-0a8b-4e14-99b5-5373ec5c942b)
 
 ## developer :
 
